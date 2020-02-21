@@ -91,12 +91,12 @@ Data:
 ## Links
 
 ### Trello
-[Link url](https://trello.com/b/tJ9BmpVo/hack-usa)
+[Link](https://trello.com/b/tJ9BmpVo/hack-usa)
 
 ### Git
-[Link Repo](https://github.com/federicogiorgino/hackaton-team-usa.git)
+[Link](https://github.com/federicogiorgino/hackaton-team-usa.git)
 (Deploy)
 
 
 ### Slides
-[Link slides](https://docs.google.com/presentation/d/1rETak6sQojHQdBLhb3TSaqZWnfan7sSeFkM8rmsXyZc/edit?usp=sharing)
+[Link](https://docs.google.com/presentation/d/1rETak6sQojHQdBLhb3TSaqZWnfan7sSeFkM8rmsXyZc/edit?usp=sharing)
