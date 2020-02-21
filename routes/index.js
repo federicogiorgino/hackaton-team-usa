@@ -50,7 +50,7 @@ router.get("/:yearId/person", (req, res) => {
     });
 });
 
-router.get("/:yearId/:personId/profile", (req, res) => {
+router.get("/:personId/profile", (req, res) => {
   const { yearId, personId } = req.params;
   console.log(yearId);
   axios
@@ -74,7 +74,6 @@ router.get("/:yearId/events", (req, res) => {
       data = resp.data;
       res.render("eventList", { data });
     })
-
     .catch(error => {
       console.log(error);
     });

@@ -237,3 +237,12 @@ a:visited {
   background-color: #333333;
   padding: 15px;
 }
+
+a, a:hover, a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  padding: 5px;
+}
