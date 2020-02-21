@@ -1,8 +1,8 @@
 <div>
-    {{#each data}}
-    <a href="/{{this.yearId}}/event">
-        {{this.location}}
-        Show all events of the year
-    </a>
-    {{/each}}
+
+    {{data.year}}
+    {{data.title}}
+    
+
+    <a href="/{{data.id}}/events"></a>
 </div>
