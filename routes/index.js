@@ -25,7 +25,7 @@ router.get("/year/:year", function(req, res, next) {
     .get(`https://hack-usa-jasondata.herokuapp.com/year?year=${year}`)
     .then(resp => {
       data = resp.data;
-      res.render();
+      res.render("", {});
     })
     .catch(error => {
       console.log(error);
