@@ -4,12 +4,13 @@
 <head>
   <title>{{title}}</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600,800" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="../src/styles.css">
   <script src="/javascripts/lax.min.js"></script>
   <link rel='stylesheet' href='/stylesheets/style.css' />
   <script type="text/javascript">
-    window.onload = function() {
+    window.onload = function () {
       document.getElementById("main").classList.add("loaded")
 
       lax.setup()
@@ -22,8 +23,8 @@
       window.requestAnimationFrame(update)
 
       let w = window.innerWidth
-      window.addEventListener("resize", function() {
-        if(w !== window.innerWidth) {
+      window.addEventListener("resize", function () {
+        if (w !== window.innerWidth) {
           lax.updateElements()
         }
       });
@@ -33,8 +34,10 @@
 
 <body>
   {{{body}}}
+
+
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script type="text/javascript" src=".././public/javascripts/get_axios.js"></script>
+  {{!-- <script type="text/javascript" src=".././public/javascripts/get_axios.js"></script> --}}
 </body>
 
 </html>

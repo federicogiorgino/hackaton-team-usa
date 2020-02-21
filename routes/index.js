@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const axios = require("axios");
+
 //require and npm i axios
 
 /* GET /timeline */
@@ -20,9 +21,9 @@ router.get("/", (req, res, next) => {
 /* GET /timeline/year */
 
 router.get("/:year", (req, res, next) => {
-  const { year } = req.params;
+  const { yearId } = req.params;
   axios
-    .get(`https://hack-usa-jasondata.herokuapp.com/year?year=${year}`)
+    .get(`https://hack-usa-jasondata.herokuapp.com/year?year=${yearId}`)
     .then(resp => {
       data = resp.data;
       res.render("yearDetails", { data });
@@ -35,7 +36,7 @@ router.get("/:year", (req, res, next) => {
 /* GET /timeline/year/event */
 
 router.get("/:yearId/event", (req, res) => {
-  const { yearId, event } = req.params;
+  const { yearId } = req.params;
   axios
     .get(`https://hack-usa-jasondata.herokuapp.com/year?yearId=${yearId}/event`)
     // .get(`https://hack-usa-jasondata.herokuapp.com/year?year=${year}&event=${event}`)
