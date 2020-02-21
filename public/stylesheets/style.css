@@ -1,10 +1,11 @@
-body,html {
-  margin:0;
-  padding:0;
-  color: #F3F4F5;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  color: #f3f4f5;
   background: #191818;
   overflow-x: hidden;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Marcellus", sans-serif;
 }
 
 #main {
@@ -103,19 +104,19 @@ body,html {
 .bubble.a {
   width: 100pt;
   height: 100pt;
-  border-radius: 50pt
+  border-radius: 50pt;
 }
 
 .bubble.b {
   width: 130pt;
   height: 130pt;
-  border-radius: 65pt
+  border-radius: 65pt;
 }
 
 .bubble.c {
   width: 50pt;
   height: 50pt;
-  border-radius: 25pt
+  border-radius: 25pt;
 }
 
 .section {
@@ -151,7 +152,7 @@ p {
 }
 
 .button {
-  padding: 10pt 50pt; 
+  padding: 10pt 50pt;
   background: url(img/button-bg.jpg);
   background-size: 100pt;
   border-radius: 10pt;
@@ -186,5 +187,46 @@ a:visited {
   background: none;
   width: 50px;
   height: 100%;
-  
+}
+
+.bubble {
+  width: 40px;
+}
+
+.dx-img-sx-text img,
+.sx-img-dx-text img {
+  width: 30%;
+}
+
+.dx-img-sx-text,
+.sx-img-dx-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.event-container h1 {
+  color: #98112c;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.event-container h4 {
+  color: #031e67;
+  text-transform: capitalize;
+  margin-left: 20px;
+  font-size: 2rem;
+}
+
+.event-container p {
+  text-align: justify;
+  margin: 10px;
+  padding: 10px;
+}
+
+.event-container {
+  margin: 20px;
+  background-color: #333333;
+  padding: 15px;
 }
