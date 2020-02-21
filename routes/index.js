@@ -2,7 +2,6 @@ const express = require("express");
 const router = express.Router();
 const axios = require("axios");
 
-
 /* GET /timeline */
 router.get("/", (req, res, next) => {
   axios
@@ -21,12 +20,12 @@ router.get("/", (req, res, next) => {
 
 router.get("/:yearId", (req, res, next) => {
   const { yearId } = req.params;
-  console.log("-->", yearId)
+  console.log("-->", yearId);
   axios
     .get(`https://hack-usa-jasondata.herokuapp.com/year/${yearId}`)
     .then(resp => {
       data = resp.data;
-      console.log(data)
+      console.log(data);
       res.render("yearDetails", { data });
     })
     .catch(error => {
@@ -36,9 +35,39 @@ router.get("/:yearId", (req, res, next) => {
 
 /* GET /timeline/year/event */
 
+router.get("/:yearId/person", (req, res) => {
+  const { yearId } = req.params;
+  console.log(yearId);
+  axios
+    .get(`https://hack-usa-jasondata.herokuapp.com/year/${yearId}/person`)
+    .then(resp => {
+      data = resp.data;
+      res.render("personList", { data });
+    })
+
+    .catch(error => {
+      console.log(error);
+    });
+});
+
+router.get("/:yearId/:personId/profile", (req, res) => {
+  const { yearId, personId } = req.params;
+  console.log(yearId);
+  axios
+    .get(`https://hack-usa-jasondata.herokuapp.com/person/${personId}`)
+    .then(resp => {
+      data = resp.data;
+      res.render("people", { data });
+    })
+
+    .catch(error => {
+      console.log(error);
+    });
+});
+
 router.get("/:yearId/events", (req, res) => {
   const { yearId } = req.params;
-  console.log(yearId)
+  console.log(yearId);
   axios
     .get(`https://hack-usa-jasondata.herokuapp.com/year/${yearId}/event`)
     .then(resp => {
