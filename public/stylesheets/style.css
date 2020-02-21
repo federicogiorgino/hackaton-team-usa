@@ -198,6 +198,13 @@ a:visited {
   width: 30%;
 }
 
+#year-title {
+  font-size: 80px;
+  margin: 0px 30px;
+  width: 40%;
+  text-align: center;
+}
+
 .dx-img-sx-text,
 .sx-img-dx-text {
   display: flex;
