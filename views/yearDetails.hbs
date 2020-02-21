@@ -1,8 +1,51 @@
-<div>
-    Hello this is a year deatal
-    {{data.year}}
-    {{data.title}}
+<link href="https://fonts.googleapis.com/css?family=Marcellus&display=swap" rel="stylesheet">
+
+<div id="year-title">
     
-    <a href="/{{data.id}}/events">--> Here you can see all Events of this year</a>
+    <h1>USA OLYMPIC TEAM MILESTONES: {{data.year}}</h1>
+    
+    <h2></h2>{{data.title}}</h2>
+    
+    <h2><a href="/{{data.id}}/events"> Here you can see all events of this year</a></h2>
     
 </div>
+
+<div class="container">
+
+  <div class="row" id="menu">
+    <div class="col col-xs-6">
+      <img src="/images/simon.jpeg" alt="" class="img-fluid">
+    </div>
+    <div class="col col-xs-6">
+      <h2>MEDALS</h2>
+    </div>
+  </div>
+
+</div>
+
+<style>
+
+#year-title {
+    font-family: "Marcellus";
+    text-align: center;
+    color:#98112C;
+}
+
+#year-subtitle {
+    font-family: "Marcellus";
+    text-align: center;
+    color:#031E67
+}
+
+.row {
+
+    display: flex;
+    position: absolute;
+  left: 30%;
+  top: 30%;
+  padding: 20px;
+  margin: 20px 20px;
+}
+
+
+</style>
